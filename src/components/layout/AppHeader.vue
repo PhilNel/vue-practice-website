@@ -1,7 +1,7 @@
 <template>
     <header class="app-header">
         <div class="header-content">
-            <div class="logo">
+            <div class="logo" @click="navToHome">
                 <img src="@/assets/logo.jpg" alt="Nel Skin Care" class="logo-image">
             </div>
             <NavigationDrawer />
@@ -11,6 +11,9 @@
 
 <script setup lang="ts">
 import NavigationDrawer from '@/components/ui/NavigationDrawer.vue'
+import { useNavigation } from '@/composables/useNavigation'
+
+const { navToHome } = useNavigation()
 </script>
 
 <style scoped>
@@ -43,6 +46,12 @@ import NavigationDrawer from '@/components/ui/NavigationDrawer.vue'
 .logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
+    transition: opacity var(--transition-fast);
+}
+
+.logo:hover {
+    opacity: 0.8;
 }
 
 .logo-image {

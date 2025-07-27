@@ -18,7 +18,7 @@ import officeImage from '@/assets/office.jpg'
 const heroData = {
   title: 'SKIN THERAPY\nINSIDE AND OUT',
   subtitle: 'Perfection in practice / Excellence in therapy',
-  description: 'With almost two decades laser therapy and skin care experience, with <strong>Dr. Len Nel</strong> (Dermatologist) on hand, we offer the full spectrum of anti-ageing treatments.',
+  description: 'With nearly two decades of laser therapy and skincare expertise, <strong>Dr. Len Nel (Dermatologist)</strong> and our team offer the complete spectrum of anti-aging treatments.',
   backgroundImage: officeImage
 }
 </script>
