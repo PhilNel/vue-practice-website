@@ -35,11 +35,11 @@ const handleClick = () => {
     justify-content: center;
     padding: var(--space-3) var(--space-6);
     font-size: var(--text-sm);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-bold);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     border: 2px solid transparent;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-lg);
     cursor: pointer;
     transition: all var(--transition-normal);
     text-decoration: none;

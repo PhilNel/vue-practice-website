@@ -1,15 +1,28 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <HeroSection :title="heroData.title" :background-image="heroData.backgroundImage" />
+    <PartnersSection />
+    <Therapists />
   </div>
 </template>
+
+<script setup lang="ts">
+import HeroSection from '@/components/sections/HeroSection.vue'
+import PartnersSection from '@/components/sections/PartnersSection.vue'
+import Therapists from '@/components/sections/Therapists.vue'
+import clinicImage from '@/assets/clinic.jpg'
+
+const heroData = {
+  title: 'THE CLINIC',
+  backgroundImage: clinicImage
+}
+</script>
 
 <style>
 @media (min-width: 1024px) {
   .about {
-    min-height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
   }
 }
 </style>

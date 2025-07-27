@@ -1,29 +1,38 @@
 <template>
-    <BackgroundSection :background-image="officeImage" image-alt="Office" height="30vh" min-height="30vh"
+    <BackgroundSection :background-image="backgroundImage" image-alt="Hero Background" height="30vh" min-height="30vh"
         section-class="hero">
         <div class="hero-content">
             <div class="hero-text white-text">
                 <h1 class="hero-title">
-                    <span class="highlight">SKIN THERAPY</span>
-                    <span class="highlight">INSIDE AND OUT</span>
-                    <span class="subtitle">Perfection in practice / Excellence in therapy</span>
+                    <span v-for="line in titleLines" :key="line" class="highlight">{{ line }}</span>
+                    <span v-if="subtitle" class="subtitle">{{ subtitle }}</span>
                 </h1>
             </div>
         </div>
     </BackgroundSection>
-    <section class="hero-description">
+    <section v-if="description" class="hero-description">
         <div class="container">
-            <p class="hero-description-text">
-                With almost two decades laser therapy and skin care experience, with <strong>Dr. Len
-                    Nel</strong> (Dermatologist) on hand, we offer the full spectrum of anti-ageing treatments.
-            </p>
+            <p class="hero-description-text" v-html="description"></p>
         </div>
     </section>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import BackgroundSection from '@/components/ui/BackgroundSection.vue'
-import officeImage from '@/assets/office.jpg'
+
+interface Props {
+    title: string
+    subtitle?: string
+    description?: string
+    backgroundImage: string
+}
+
+const props = defineProps<Props>()
+
+const titleLines = computed(() => {
+    return props.title.split('\n').filter(line => line.trim())
+})
 </script>
 
 <style scoped>

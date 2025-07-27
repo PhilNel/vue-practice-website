@@ -1,17 +1,16 @@
 <template>
     <header class="app-header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="@/assets/logo.jpg" alt="Nel Skin Care" class="logo-image">
-                </div>
+        <div class="header-content">
+            <div class="logo">
+                <img src="@/assets/logo.jpg" alt="Nel Skin Care" class="logo-image">
             </div>
+            <NavigationDrawer />
         </div>
     </header>
 </template>
 
 <script setup lang="ts">
-// Simple header - no complex logic needed yet
+import NavigationDrawer from '@/components/ui/NavigationDrawer.vue'
 </script>
 
 <style scoped>
@@ -34,7 +33,7 @@
 
 .header-content {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
     width: 100%;
@@ -58,7 +57,7 @@
     .app-header {
         height: 4rem;
     }
-    
+
     .logo-image {
         height: 3rem;
     }
