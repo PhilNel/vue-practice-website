@@ -3,7 +3,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <h1>NEL SKIN SCARE</h1>
+                    <img src="@/assets/logo.jpg" alt="Nel Skin Care" class="logo-image">
                 </div>
             </div>
         </div>
@@ -17,46 +17,54 @@
 <style scoped>
 .container {
     margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .app-header {
     background-color: var(--color-primary);
-    padding: var(--space-4) 0;
     margin: 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: var(--shadow-sm);
+    height: 6rem;
+    display: flex;
+    align-items: center;
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
-    gap: var(--space-4);
-    min-height: 60px;
+    height: 100%;
+    width: 100%;
+    padding: 0 var(--space-8);
 }
 
-.logo h1 {
-    font-size: var(--text-3xl);
+.logo {
+    display: flex;
+    align-items: center;
+}
 
-    font-weight: var(--font-bold);
-    color: var(--color-white);
-    margin: 0;
-    line-height: 1;
-    padding-left: var(--space-16);
+.logo-image {
+    height: 4rem;
+    width: auto;
+    object-fit: contain;
+    display: block;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .logo h1 {
-        font-size: var(--text-xl);
-        padding-left: 0;
+    .app-header {
+        height: 4rem;
+    }
+    
+    .logo-image {
+        height: 3rem;
     }
 
-    .container {
-        padding-left: var(--space-6);
+    .header-content {
+        padding: 0 var(--space-3);
     }
 }
 </style>
