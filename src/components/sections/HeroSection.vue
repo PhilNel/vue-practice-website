@@ -1,6 +1,6 @@
 <template>
     <BackgroundSection :background-image="backgroundImage" image-alt="Hero Background" height="30vh" min-height="30vh"
-        section-class="hero">
+        section-class="hero" :object-position="objectPosition">
         <div class="hero-content">
             <div class="hero-text white-text">
                 <h1 class="hero-title">
@@ -26,6 +26,7 @@ interface Props {
     subtitle?: string
     description?: string
     backgroundImage: string
+    objectPosition?: string
 }
 
 const props = defineProps<Props>()
@@ -73,7 +74,6 @@ const titleLines = computed(() => {
 
 /* Hero Description Section */
 .hero-description {
-    background-color: var(--color-gray-50);
     padding: var(--space-12) 0;
 }
 

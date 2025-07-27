@@ -1,6 +1,6 @@
 <template>
     <BackgroundSection :background-image="greeneryImage" image-alt="Greenery background" height="50vh" min-height="50vh"
-        section-class="treatments-overview">
+        section-class="treatments-overview" object-position="top">
         <div class="section-header white-text">
             <h2>TREATMENTS</h2>
             <p>We only use therapies we believe in, signature therapies, that are cutting-edge

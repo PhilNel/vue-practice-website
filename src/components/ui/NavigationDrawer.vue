@@ -41,6 +41,7 @@ const isOpen = ref(false)
 
 const routes = [
     { name: 'home', path: '/', label: 'HOME' },
+    { name: 'specials', path: '/specials', label: 'SPECIALS' },
     { name: 'about', path: '/about', label: 'ABOUT' }
 ]
 
@@ -85,7 +86,7 @@ const closeDrawer = () => {
     height: 2px;
     width: 100%;
     background-color: var(--color-white);
-    transition: all 0.3s ease;
+    transition: var(--transition-normal);
     transform-origin: center;
 }
 

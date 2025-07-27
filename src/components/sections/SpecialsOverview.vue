@@ -1,6 +1,6 @@
 <template>
     <BackgroundSection :background-image="roomImage" image-alt="Room background" height="30vh" min-height="50vh"
-        section-class="specials">
+        section-class="specials" object-position="top">
         <div class="section-header white-text">
             <h2>SPECIALS</h2>
             <p>Discover our exclusive monthly offers and special treatment packages designed to

@@ -59,12 +59,12 @@ h6 {
   --color-primary-100: #f1f4f7;
   --color-primary-200: #e3e9ef;
 
-  /* Secondary Colors - Natural Neutral Warm */
-  --color-secondary: #8b7355;
-  --color-secondary-dark: #6d5940;
-  --color-secondary-light: #a68d6f;
-  --color-secondary-50: #faf9f7;
-  --color-secondary-100: #f4f1ec;
+  /* Secondary Colors - Natural Plant Green */
+  --color-secondary: #4a7c59;
+  --color-secondary-dark: #3d6b4a;
+  --color-secondary-light: #6b9a78;
+  --color-secondary-50: #f0f7f2;
+  --color-secondary-100: #e1f0e5;
 
   /* Neutral Colors - Clean Medical Palette */
   --color-white: #ffffff;
@@ -142,10 +142,10 @@ h6 {
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
 
   /* Transitions */
   --transition-fast: 150ms ease-in-out;
