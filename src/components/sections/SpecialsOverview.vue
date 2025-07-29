@@ -27,11 +27,6 @@ const { navToSpecials } = useNavigation()
     padding: 0 var(--space-6);
 }
 
-.section-header p {
-    margin-bottom: var(--space-8);
-    max-width: 500px;
-}
-
 .specials-button {
     margin-top: var(--space-8);
 }

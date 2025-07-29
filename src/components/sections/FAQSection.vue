@@ -91,7 +91,6 @@ const faqs = ref<FAQ[]>([
 
 .faq-question {
     font-size: var(--text-lg);
-    font-weight: var(--font-bold);
     color: var(--color-primary);
     margin: 0 0 var(--space-4) 0;
     line-height: 1.4;

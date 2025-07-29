@@ -44,7 +44,7 @@ defineProps<Props>()
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: var(--text-sm);
+    font-size: var(--text-md);
     color: var(--color-white);
     margin-bottom: var(--space-4);
 }
@@ -80,17 +80,19 @@ defineProps<Props>()
     width: 20px;
     height: 20px;
     fill: currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-service {
-    font-size: var(--text-xs);
+    font-size: var(--text-md);
     color: var(--color-white);
     opacity: 0.8;
-    line-height: var(--leading-tight);
 }
 
 .contact-number {
-    font-size: var(--text-sm);
+    font-size: var(--text-md);
     color: var(--color-white);
     font-weight: var(--font-medium);
 }

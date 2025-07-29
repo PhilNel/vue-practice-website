@@ -22,10 +22,6 @@
     padding: var(--space-12) 0;
 }
 
-.section-header p {
-    color: var(--color-gray-600);
-}
-
 .therapists-list {
     text-align: center;
 }
@@ -53,17 +49,10 @@
 
 /* Mobile spacing improvements */
 @media (max-width: 639px) {
-    .therapists {
-        padding: var(--space-8) 0;
-    }
 
     .therapists-image img {
         width: 100%;
         max-width: 100%;
-    }
-
-    .section-header h2 {
-        margin-bottom: var(--space-6);
     }
 }
 </style>

@@ -114,6 +114,7 @@ const closeDrawer = () => {
 .nav-link {
     color: var(--color-white);
     text-decoration: none;
+    font-family: var(--font-family-secondary);
     font-weight: var(--font-medium);
     font-size: var(--text-sm);
     letter-spacing: 0.05em;
@@ -127,7 +128,6 @@ const closeDrawer = () => {
 
 .nav-link.active {
     opacity: 1;
-    font-weight: var(--font-bold);
 }
 
 /* Drawer Overlay */
@@ -169,6 +169,7 @@ const closeDrawer = () => {
 .drawer-link {
     color: var(--color-white);
     text-decoration: none;
+    font-family: var(--font-family-secondary);
     font-weight: var(--font-medium);
     font-size: var(--text-lg);
     letter-spacing: 0.05em;
@@ -183,7 +184,6 @@ const closeDrawer = () => {
 
 .drawer-link.active {
     background-color: rgba(255, 255, 255, 0.2);
-    font-weight: var(--font-semibold);
 }
 
 /* Responsive Design */

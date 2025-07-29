@@ -69,6 +69,7 @@ const treatments = ref<Treatment[]>([
 </script>
 
 <style scoped>
+
 .treatments-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -94,7 +95,6 @@ const treatments = ref<Treatment[]>([
     font-size: var(--text-lg);
     color: var(--color-primary);
     margin-bottom: var(--space-3);
-    font-weight: var(--font-semibold);
 }
 
 .treatment-card p {

@@ -3,7 +3,7 @@
         section-class="hero" :object-position="objectPosition">
         <div class="hero-content">
             <div class="hero-text white-text">
-                <h1 class="hero-title">
+                <h1 class="section-header">
                     <span v-for="line in titleLines" :key="line" class="highlight">{{ line }}</span>
                     <span v-if="subtitle" class="subtitle">{{ subtitle }}</span>
                 </h1>
@@ -49,10 +49,6 @@ const titleLines = computed(() => {
     margin: 0 auto;
 }
 
-.hero-title {
-    font-size: var(--text-4xl);
-}
-
 .white-text .hero-title,
 .white-text .highlight,
 .white-text .subtitle {
@@ -61,7 +57,6 @@ const titleLines = computed(() => {
 
 .highlight {
     display: block;
-    margin-bottom: var(--space-2);
 }
 
 .subtitle {
@@ -97,12 +92,8 @@ const titleLines = computed(() => {
         padding: var(--space-8) var(--space-4);
     }
 
-    .hero-title {
-        font-size: var(--text-3xl);
-    }
-
     .subtitle {
-        font-size: var(--text-lg);
+        font-size: var(--text-base);
     }
 
     .hero-description {

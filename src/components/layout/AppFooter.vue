@@ -79,11 +79,8 @@ const contactItems = [
 
 .contact-section h2,
 .addresses-section h2 {
-    font-size: var(--text-3xl);
-    line-height: var(--leading-tight);
     margin-bottom: var(--space-6);
     color: var(--color-white);
-    letter-spacing: 0.025em;
     text-align: center;
 }
 
@@ -109,7 +106,7 @@ const contactItems = [
 }
 
 .address-text {
-    font-size: var(--text-sm);
+    font-size: var(--text-md);
     color: var(--color-white);
     line-height: var(--leading-relaxed);
 }

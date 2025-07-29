@@ -29,8 +29,8 @@ defineProps<Props>()
 }
 
 .partner-name {
+    font-family: var(--font-family-secondary);
     font-size: var(--text-lg);
-    font-weight: var(--font-semibold);
     color: var(--color-gray-900);
     margin-top: var(--space-4);
 }

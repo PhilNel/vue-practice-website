@@ -73,7 +73,6 @@ const formattedDescription = computed(() => {
 
 .special-title {
     font-size: var(--text-xl);
-    font-weight: var(--font-bold);
     color: var(--color-primary);
     margin: 0;
     line-height: 1.3;
@@ -94,7 +93,6 @@ const formattedDescription = computed(() => {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-weight: var(--font-bold);
 }
 
 .percentage {
@@ -125,7 +123,6 @@ const formattedDescription = computed(() => {
 
 .current-price {
     font-size: var(--text-2xl);
-    font-weight: var(--font-bold);
     color: var(--color-primary);
 }
 

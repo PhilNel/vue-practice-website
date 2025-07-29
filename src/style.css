@@ -1,5 +1,6 @@
 /* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Avenir+Next:wght@400;500;600;700&display=swap');
 
 /* Modern CSS Reset */
 *,
@@ -88,11 +89,11 @@ h6 {
   --color-error-light: #fee2e2;
 
   /* Typography */
-  --font-family-primary: "Playfair Display", serif;
-  --font-family-sans: "Playfair Display", serif;
-  --font-family-logo: "Playfair Display", serif;
-  --font-family-serif: "Playfair Display", serif;
-  --font-family-mono: "Playfair Display", serif;
+  --font-family-primary: "Avenir Next", sans-serif;
+  --font-family-sans: "Avenir Next", sans-serif;
+  --font-family-logo: "Libre Baskerville", serif;
+  --font-family-secondary: "Libre Baskerville", serif;
+  --font-family-mono: "Avenir Next", sans-serif;
 
   /* Font Sizes - Mobile First */
   --text-xs: 0.75rem; /* 12px */
@@ -177,9 +178,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-family-primary);
-  font-weight: var(--font-semibold);
-  line-height: var(--leading-tight);
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-normal);
   color: var(--color-gray-900);
 }
 
@@ -244,16 +244,19 @@ li {
   color: var(--color-gray-600);
 }
 
-/* Section Headers */
+/* Section Headers - Standardized Styles */
 .section-header {
   text-align: center;
+  margin-bottom: var(--space-8);
 }
 
 .section-header h2 {
-  font-size: var(--text-3xl);
-  font-weight: var(--font-semibold);
-  letter-spacing: 0.05em;
-  margin-bottom: var(--space-4);
+  font-family: var(--font-family-secondary);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-normal);
+  color: var(--color-gray-900);
+  margin-bottom: var(--space-6);
+  letter-spacing: 0.025em;
 }
 
 .section-header.white-text h2 {
@@ -261,14 +264,31 @@ li {
 }
 
 .section-header p {
+  font-family: var(--font-family-primary);
   font-size: var(--text-base);
+  color: var(--color-gray-700);
   max-width: 700px;
-  margin: 0 auto var(--space-4);
+  margin: 0 auto var(--space-6);
   line-height: var(--leading-relaxed);
+}
+
+.section-header p:last-child {
+  margin-bottom: 0;
 }
 
 .section-header.white-text p {
   color: var(--color-white);
+}
+
+/* Responsive section headers */
+@media (min-width: 640px) {
+  .section-header h2 {
+    font-size: var(--text-3xl);
+  }
+  
+  .section-header p {
+    font-size: var(--text-lg);
+  }
 }
 
 /* Container */
@@ -306,11 +326,6 @@ li {
 
 /* Responsive Breakpoints */
 @media (min-width: 640px) {
-  :root {
-    --text-3xl: 2.25rem; /* 36px */
-    --text-4xl: 3rem; /* 48px */
-    --text-5xl: 4rem; /* 64px */
-  }
 
   .container {
     max-width: var(--container-sm);
