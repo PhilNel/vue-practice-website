@@ -39,8 +39,7 @@
 }
 
 .therapists-image img {
-    width: 80%;
-    max-width: 80%;
+    width: 50%;
     height: auto;
     border-radius: var(--radius-xl);
     display: block;
@@ -52,7 +51,6 @@
 
     .therapists-image img {
         width: 100%;
-        max-width: 100%;
     }
 }
 </style>
