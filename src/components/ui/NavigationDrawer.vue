@@ -119,7 +119,7 @@ const closeDrawer = () => {
     font-size: var(--text-sm);
     letter-spacing: 0.05em;
     transition: opacity 0.2s ease;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .nav-link:hover {
@@ -128,6 +128,7 @@ const closeDrawer = () => {
 
 .nav-link.active {
     opacity: 1;
+    border-bottom: 2px solid var(--color-white);
 }
 
 /* Drawer Overlay */

@@ -23,7 +23,7 @@
 <script setup lang="ts">
 import PartnerCard from '@/components/ui/PartnerCard.vue'
 import LineSeparator from '@/components/ui/LineSeparator.vue'
-import drNelImage from '@/assets/dr-nel.png'
+import drNelImage from '@/assets/dr-nel.jpg'
 import wallpaperImage from '@/assets/wallpaper.jpg'
 
 const partners = [
