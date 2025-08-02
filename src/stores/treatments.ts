@@ -6,7 +6,7 @@ export const useTreatmentsStore = defineStore("treatments", {
     treatments: [
       {
         treatmentId: "laser-hair-removal",
-        name: "Hair Removal",
+        name: "Laser Hair Removal",
         shortDescription:
           "The Prowave hair removal system delivers a specially tailored light source for permanent hair reduction. Cutera's innovative hair removal technology provides effective treatment for a wide range of skin types.",
         category: "laser",
@@ -93,7 +93,7 @@ export const useTreatmentsStore = defineStore("treatments", {
         services: [
           {
             serviceId: "dermapen-treatment",
-            description: "Dermapen Treatment",
+            description: "Treatment",
             targetAreas: ["face"],
             type: "session",
             price: 1900,
@@ -151,7 +151,7 @@ export const useTreatmentsStore = defineStore("treatments", {
           },
           {
             serviceId: "pearl-fractional-lip",
-            description: "Lip,",
+            description: "Lip",
             targetAreas: ["lips"],
             type: "session",
             price: 3000,
@@ -374,7 +374,7 @@ export const useTreatmentsStore = defineStore("treatments", {
       },
       {
         treatmentId: "red-light-treatment",
-        name: "Red Light Treatment",
+        name: "Red Light",
         shortDescription:
           "A quick, well tolerated and non-invasive treatment. The omnilux red light uses specific wavelengths to stimulates the deeper skin layers to increase the speed and efficiency by which your skin manufactures new collagen. Successfully treats a variety of skin conditions including acne, skin rejuvenation and wound healing.",
         category: "light-therapy",
@@ -390,7 +390,7 @@ export const useTreatmentsStore = defineStore("treatments", {
         services: [
           {
             serviceId: "red-light-treatment-session",
-            description: "Red Light Treatment",
+            description: "Treatment",
             targetAreas: ["face"],
             type: "session",
             price: 450,
@@ -400,7 +400,7 @@ export const useTreatmentsStore = defineStore("treatments", {
       },
       {
         treatmentId: "ndyag-veins",
-        name: "NdYag Veins Treatment",
+        name: "Nd:YAG",
         shortDescription:
           "A laser treatment designed for resolving a variety of vascular conditions. Nd:YAG can treat the following conditions: spider and fine facial veins, telangiectasia, hemangiomas, warts, nail fungus, and port wine stains.",
         category: "laser",
@@ -410,7 +410,7 @@ export const useTreatmentsStore = defineStore("treatments", {
         services: [
           {
             serviceId: "ndyag-veins-treatment",
-            description: "NdYag Veins Treatment",
+            description: "Veins Treatment",
             targetAreas: ["legs", "face", "body"],
             type: "variable",
             priceRangeMin: 1000,

@@ -43,6 +43,7 @@ const routes = [
     { name: 'home', path: '/', label: 'HOME' },
     { name: 'specials', path: '/specials', label: 'SPECIALS' },
     { name: 'treatments', path: '/treatments', label: 'TREATMENTS' },
+    { name: 'pricing', path: '/pricing', label: 'PRICING' },
     { name: 'faq', path: '/faq', label: 'FAQS' },
     { name: 'about', path: '/about', label: 'ABOUT' },
     { name: 'contact', path: '/contact', label: 'CONTACT' }

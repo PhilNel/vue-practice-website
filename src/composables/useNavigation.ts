@@ -15,6 +15,10 @@ export const useNavigation = () => {
     router.push("/treatments");
   };
 
+  const navToPricing = () => {
+    router.push("/pricing");
+  };
+
   const navToSpecials = () => {
     router.push("/specials");
   };
@@ -27,6 +31,7 @@ export const useNavigation = () => {
     navToHome,
     navToAbout,
     navToTreatments,
+    navToPricing,
     navToSpecials,
     navToContact,
   };
