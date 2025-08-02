@@ -1,8 +1,13 @@
 <template>
     <section :class="['background-section', sectionClass]" :style="{ '--section-height': height, minHeight: height }">
         <div class="background-image-container">
-            <img :src="backgroundImage" :alt="imageAlt" class="background-image" :style="{ objectPosition }">
-            <div class="background-overlay"></div>
+            <template v-if="showImage && backgroundImage">
+                <img :src="backgroundImage" :alt="imageAlt" class="background-image" :style="{ objectPosition }" @error="handleImageError">
+                <div class="background-overlay"></div>
+            </template>
+            <div v-else class="background-fallback">
+                <img :src="logoImage" alt="Logo" class="fallback-logo" />
+            </div>
         </div>
         <div class="container content-wrapper">
             <div class="content-inner">
@@ -13,6 +18,9 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
+import logoImage from '@/assets/logo.webp'
+
 interface Props {
     backgroundImage: string
     imageAlt?: string
@@ -22,13 +30,19 @@ interface Props {
     minHeight?: string
 }
 
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
     imageAlt: 'Background image',
     height: '60vh',
     sectionClass: '',
     objectPosition: 'center',
     minHeight: '40vh'
 })
+
+const showImage = ref(true)
+
+const handleImageError = () => {
+    showImage.value = false
+}
 </script>
 
 <style scoped>
@@ -78,5 +92,23 @@ withDefaults(defineProps<Props>(), {
 
 .content-inner {
     width: 100%;
+}
+
+.background-fallback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.fallback-logo {
+    max-width: 120px;
+    max-height: 80px;
 }
 </style>
