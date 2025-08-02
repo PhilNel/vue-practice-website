@@ -13,6 +13,13 @@ try {
   const pathsToInvalidate = [
     "/index.html",
     "/assets/*",
+    "/site.webmanifest",
+    "/favicon.ico",
+    "/favicon.svg",
+    "/favicon-96x96.png",
+    "/apple-touch-icon.png",
+    "/web-app-manifest-192x192.png",
+    "/web-app-manifest-512x512.png",
   ].join(" ");
 
   const invalidateCommand = `aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths ${pathsToInvalidate} --profile ${AWS_PROFILE}`;
