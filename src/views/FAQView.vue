@@ -8,7 +8,7 @@
 <script setup lang="ts">
 import HeroSection from '@/components/sections/HeroSection.vue'
 import FAQSection from '@/components/sections/FAQSection.vue'
-import bodyBgImage from '@/assets/body-bg.jpg'
+import bodyBgImage from '@/assets/body-bg.webp'
 
 const heroData = {
     title: 'FAQs',

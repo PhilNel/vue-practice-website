@@ -16,7 +16,7 @@ export default defineConfig({
       output: {
         assetFileNames: (assetInfo) => {
           const extType = assetInfo.names?.[0]?.split(".").pop();
-          if (extType && /png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+          if (extType && /png|jpe?g|webp|svg|gif|tiff|bmp|ico/i.test(extType)) {
             return `static/[name]-[hash][extname]`;
           }
           return `assets/[name]-[hash][extname]`;

@@ -11,7 +11,7 @@
                 <p><strong>Our Therapists:</strong> Tanya Gafney, Mandy Pretorius, Dawn Frost and Nicola Waller</p>
             </div>
             <div class="therapists-image">
-                <img src="@/assets/therapists.jpeg" alt="Our team of professional therapists" />
+                <img src="@/assets/therapists.webp" alt="Our team of professional therapists" />
             </div>
         </div>
     </section>

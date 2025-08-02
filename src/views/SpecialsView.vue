@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import HeroSection from '@/components/sections/HeroSection.vue'
-import clinicImage from '@/assets/skin-care-model.jpg'
+import clinicImage from '@/assets/skin-care-model.webp'
 import SpecialsList from '@/components/sections/SpecialsList.vue'
 
 const heroData = {

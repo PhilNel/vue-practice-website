@@ -10,7 +10,7 @@
 import HeroSection from '@/components/sections/HeroSection.vue'
 import PartnersSection from '@/components/sections/PartnersSection.vue'
 import Therapists from '@/components/sections/Therapists.vue'
-import clinicImage from '@/assets/clinic.jpg'
+import clinicImage from '@/assets/clinic.webp'
 
 const heroData = {
   title: 'THE CLINIC',

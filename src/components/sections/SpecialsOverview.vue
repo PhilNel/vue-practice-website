@@ -17,7 +17,7 @@
 import Button from '@/components/ui/Button.vue'
 import BackgroundSection from '@/components/ui/BackgroundSection.vue'
 import { useNavigation } from '@/composables/useNavigation'
-import roomImage from '@/assets/room.jpg'
+import roomImage from '@/assets/room.webp'
 
 const { navToSpecials } = useNavigation()
 </script>

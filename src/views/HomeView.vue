@@ -13,7 +13,7 @@ import HeroSection from '@/components/sections/HeroSection.vue'
 import TreatmentsOverview from '@/components/sections/TreatmentsOverview.vue'
 import Therapists from '@/components/sections/Therapists.vue'
 import SpecialsOverview from '@/components/sections/SpecialsOverview.vue'
-import officeImage from '@/assets/office.jpg'
+import officeImage from '@/assets/office.webp'
 
 const heroData = {
   title: 'SKIN THERAPY\nINSIDE AND OUT',

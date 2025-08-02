@@ -2,7 +2,7 @@
     <header class="app-header">
         <div class="header-content">
             <div class="logo" @click="navToHome">
-                <img src="@/assets/logo.jpg" alt="Nel Skin Care" class="logo-image">
+                <img src="@/assets/logo.webp" alt="Nel Skin Care" class="logo-image">
             </div>
             <NavigationDrawer />
         </div>
