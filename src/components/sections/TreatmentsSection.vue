@@ -86,6 +86,9 @@ onMounted(() => {
 
 .treatment-content {
     padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .treatment-title {
@@ -101,6 +104,7 @@ onMounted(() => {
     font-size: var(--text-base);
     line-height: var(--leading-relaxed);
     margin: 0 0 var(--space-3) 0;
+    flex-grow: 1;
 }
 
 .treatment-price {
