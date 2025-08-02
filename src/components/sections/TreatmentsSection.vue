@@ -7,9 +7,9 @@
             </div>
             <div v-else class="treatments-grid">
                 <div v-for="treatment in treatments" :key="treatment.treatmentId" class="treatment-card">
-                    <BackgroundSection :background-image="getOverviewImageUrl(treatment)"
+                    <BackgroundSection :background-image="`https://nelskincare.co.za/images/${treatment.treatmentId}/overview.webp`"
                         :image-alt="`${treatment.name} treatment overview`" height="200px"
-                        section-class="treatment-image-section">
+                        section-class="treatment-image-section" :object-position="'bottom'">
                     </BackgroundSection>
                     <div class="treatment-content">
                         <h3 class="treatment-title">{{ treatment.name.toUpperCase() }}</h3>
@@ -28,14 +28,8 @@ import { useTreatments } from '@/composables/useTreatments'
 import BackgroundSection from '@/components/ui/BackgroundSection.vue'
 import { calculatePriceDisplay } from '@/utils/pricing'
 import LoadingSpinner from '@/components/ui/LoadingSpinner.vue'
-import type { Treatment } from '@/types/treatment'
 
 const { treatments, loading, error, fetchTreatments } = useTreatments()
-
-const getOverviewImageUrl = (treatment: Treatment): string => {
-    const overviewImage = treatment.images.find(img => img.purpose === 'overview')
-    return overviewImage ? `https://nelskincare.co.za/images/${overviewImage.imageKey}.webp` : ''
-}
 
 onMounted(() => {
     fetchTreatments()

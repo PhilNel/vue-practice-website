@@ -3,7 +3,9 @@ export interface TreatmentService {
   description: string;
   targetAreas: string[];
   type: string;
-  price: number;
+  price?: number;
+  priceRangeMin?: number;
+  priceRangeMax?: number;
   currency: string;
 }
 

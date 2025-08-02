@@ -21,12 +21,8 @@ function getAllPrices(services: TreatmentService[]): number[] {
   services.forEach((service) => {
     if (service.type === "variable") {
       // Variable services have priceRangeMin and priceRangeMax
-      const variableService = service as TreatmentService & {
-        priceRangeMin: number;
-        priceRangeMax: number;
-      };
-      if (variableService.priceRangeMin) prices.push(variableService.priceRangeMin);
-      if (variableService.priceRangeMax) prices.push(variableService.priceRangeMax);
+      if (service.priceRangeMin) prices.push(service.priceRangeMin);
+      if (service.priceRangeMax) prices.push(service.priceRangeMax);
     } else if (service.price) {
       // Session and per-unit services have a single price
       prices.push(service.price);
