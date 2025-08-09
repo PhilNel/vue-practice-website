@@ -7,9 +7,13 @@
                 <p>{{ error }}</p>
             </div>
 
-                  <div v-else class="specials-list">
-        <SpecialCard v-for="special in specials" :key="special.id" :special="special" />
-      </div>
+            <div v-else-if="specials.length === 0" class="empty-state">
+                <p>No specials currently available, please check back later!</p>
+            </div>
+
+            <div v-else class="specials-list">
+                <SpecialCard v-for="special in specials" :key="special.id" :special="special" />
+            </div>
         </div>
     </section>
 </template>
@@ -50,12 +54,12 @@ onMounted(() => {
 }
 
 .specials-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-8);
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .error-state {
@@ -68,15 +72,25 @@ onMounted(() => {
     color: var(--color-error);
 }
 
+.empty-state {
+    text-align: center;
+    padding: var(--space-12);
+}
+
+.empty-state p {
+    font-size: var(--text-lg);
+    color: var(--color-gray-600);
+}
+
 @media (max-width: 768px) {
 
     .section-subtitle {
         font-size: var(--text-base);
     }
 
-      .specials-list {
-    gap: var(--space-6);
-  }
+    .specials-list {
+        gap: var(--space-6);
+    }
 }
 
 @media (max-width: 480px) {
@@ -84,8 +98,8 @@ onMounted(() => {
         padding: 0 var(--space-4);
     }
 
-      .specials-list {
-    gap: var(--space-4);
-  }
+    .specials-list {
+        gap: var(--space-4);
+    }
 }
 </style>
