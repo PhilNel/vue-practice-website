@@ -24,7 +24,7 @@
 import PartnerCard from '@/components/ui/PartnerCard.vue'
 import LineSeparator from '@/components/ui/LineSeparator.vue'
 import drNelImage from '@/assets/dr-nel.webp'
-import wallpaperImage from '@/assets/wallpaper.webp'
+import wallpaperImage from '@/assets/maingard.webp'
 
 const partners = [
     {
