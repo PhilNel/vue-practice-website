@@ -7,7 +7,7 @@
             </div>
             <div v-else class="treatments-grid">
                 <div v-for="treatment in treatments" :key="treatment.treatmentId" class="treatment-card">
-                    <BackgroundSection :background-image="`https://nelskincare.co.za/images/${treatment.treatmentId}/overview.webp`"
+                    <BackgroundSection :background-image="buildTreatmentImageUrl(`${treatment.treatmentId}/overview.webp`)"
                         :image-alt="`${treatment.name} treatment overview`" height="200px"
                         section-class="treatment-image-section" :object-position="'bottom'">
                     </BackgroundSection>
@@ -28,6 +28,7 @@ import { useTreatments } from '@/composables/useTreatments'
 import BackgroundSection from '@/components/ui/BackgroundSection.vue'
 import { calculatePriceDisplay } from '@/utils/pricing'
 import LoadingSpinner from '@/components/ui/LoadingSpinner.vue'
+import { buildTreatmentImageUrl } from '@/utils/env'
 
 const { treatments, loading, error, fetchTreatments } = useTreatments()
 
