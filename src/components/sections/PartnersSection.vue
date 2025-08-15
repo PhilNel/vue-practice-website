@@ -4,10 +4,10 @@
             <div class="section-header">
                 <h2>PARTNERS</h2>
                 <p>
-                    Dermatologist <strong>Dr. Len Nel</strong> and Pharmacist <strong>Tanya Maingard</strong> stay current
-                    with cutting-edge research and attend international conferences to bring the most advanced anti-aging
-                    treatments to their practice. Their expertise and commitment to excellence ensure that clients receive
-                    the safest, most effective treatments available.
+                    Dermatologist <strong>Dr. Len Nel</strong> and Pharmacist <strong>Tanya Maingard</strong> bring
+                    decades of combined expertise to every treatment. They stay current with the latest research and
+                    international developments, ensuring clients receive the safest and most effective anti-aging
+                    treatments available.
                 </p>
             </div>
 
@@ -24,7 +24,7 @@
 import PartnerCard from '@/components/ui/PartnerCard.vue'
 import LineSeparator from '@/components/ui/LineSeparator.vue'
 import drNelImage from '@/assets/dr-nel.webp'
-import wallpaperImage from '@/assets/maingard.webp'
+import maingardImage from '@/assets/maingard.webp'
 
 const partners = [
     {
@@ -34,7 +34,7 @@ const partners = [
     },
     {
         name: 'TANYA MAINGARD',
-        imageSrc: wallpaperImage,
+        imageSrc: maingardImage,
         altText: 'Tanya Maingard'
     }
 ]
@@ -42,7 +42,8 @@ const partners = [
 
 <style scoped>
 .partners-section {
-    padding: var(--space-12) 0;
+    padding-top: var(--space-0);
+    padding-bottom: var(--space-12);
 }
 
 .partners-images {

@@ -3,7 +3,7 @@
     <HeroSection :title="heroData.title" :subtitle="heroData.subtitle" :description="heroData.description"
       :background-image="heroData.backgroundImage" />
     <TreatmentsOverview />
-    <Therapists />
+    <TherapistsOverview />
     <SpecialsOverview />
   </div>
 </template>
@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import HeroSection from '@/components/sections/HeroSection.vue'
 import TreatmentsOverview from '@/components/sections/TreatmentsOverview.vue'
-import Therapists from '@/components/sections/Therapists.vue'
+import TherapistsOverview from '@/components/sections/TherapistsOverview.vue'
 import SpecialsOverview from '@/components/sections/SpecialsOverview.vue'
 import officeImage from '@/assets/office.webp'
 

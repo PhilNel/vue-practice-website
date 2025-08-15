@@ -33,6 +33,7 @@ defineProps<Props>()
     font-size: var(--text-lg);
     color: var(--color-gray-900);
     margin-top: var(--space-4);
+    margin-bottom: var(--space-0);
 }
 
 /* Responsive Design */

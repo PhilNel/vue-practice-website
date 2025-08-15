@@ -5,11 +5,11 @@ import { existsSync } from "fs";
 
 const S3_ARTEFACT_BUCKET =
   process.env.S3_ARTEFACT_BUCKET ||
-  "boardgame-assistant-artefacts-dev-eu-west-1";
+  "nelskin-practice-artefacts-dev-af-south-1";
 const S3_PREFIX =
   process.env.S3_PREFIX !== undefined
     ? process.env.S3_PREFIX
-    : "vue-boardgame-assistant";
+    : "vue-practice-website";
 const AWS_PROFILE = process.env.AWS_PROFILE || "default";
 const DIST_DIR = "dist";
 

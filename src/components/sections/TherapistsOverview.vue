@@ -8,7 +8,7 @@
                     our hi tech lasers and medical professionalism.</p>
             </div>
             <div class="therapists-list">
-                <p><strong>Our Therapists:</strong> Tanya Gafney, Mandy Pretorius, Dawn Frost and Nicola Waller</p>
+                <p><strong>Our Therapists:</strong> Tanya Gafney, Mandy Pretorius, Dawn Frost and Kate Shepard</p>
             </div>
             <div class="therapists-image">
                 <img src="@/assets/therapists.webp" alt="Our team of professional therapists" />

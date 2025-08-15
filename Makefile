@@ -21,7 +21,7 @@ clean:
 
 .PHONY: upload
 upload: build
-	S3_ARTEFACT_BUCKET=nelskin-practice-artefacts-dev-eu-west-1 bun run deploy:s3
+	S3_ARTEFACT_BUCKET=nelskin-practice-artefacts-dev-af-south-1 bun run deploy:s3
 
 .PHONY: deploy
 deploy: build
