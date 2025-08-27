@@ -3,7 +3,7 @@ function ensureTrailingSlash(url: string): string {
 }
 
 export function getAssetsBaseUrl(): string {
-  const configured = import.meta.env.VITE_ASSETS_BASE_URL as string | undefined;
+  const configured = import.meta.env.VITE_ASSETS_BASE_URL;
   const fallback = "https://nelskincare.co.za/images/";
   return ensureTrailingSlash(configured || fallback);
 }
@@ -14,4 +14,8 @@ export function buildTreatmentImageUrl(relativePath: string): string {
 
 function buildAssetUrl(relativePath: string): string {
   return `${getAssetsBaseUrl()}${relativePath}`;
+}
+
+export function getGoogleTagManagerId(): string | undefined {
+  return import.meta.env.VITE_ANALYTICS_MEASUREMENT_ID;
 }
