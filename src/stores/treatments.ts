@@ -5,6 +5,33 @@ export const useTreatmentsStore = defineStore("treatments", {
   state: () => ({
     treatments: [
       {
+        treatmentId: "morpheus",
+        name: "Morpheus 8",
+        shortDescription: " A minimally-invasive fractional radiofrequency microneedling treatment that delivers controlled RF energy deep into the skin and subdermal tissue. The adjustable-depth needles create precise micro-injuries that stimulate natural collagen and elastin production, improving skin texture and firmness.",
+        category: "laser",
+        treatmentAreas: ["face", "neck"],
+        targetResults: ["skin texture", "fine lines", "acne scars", "collagen stimulation"],
+        status: "active",
+        services: [
+          {
+            serviceId: "morpheus-lower-face",
+            description: "Lower Face and Jowls",
+            targetAreas: ["face"],
+            type: "session",
+            price: 6000,
+            currency: "ZAR",
+          },
+          {
+            serviceId: "morpheus-face-neck",
+            description: "Face and Neck",
+            targetAreas: ["face", "neck"],
+            type: "session",
+            price: 8000,
+            currency: "ZAR",
+          }
+        ],
+      },
+      {
         treatmentId: "laser-hair-removal",
         name: "Laser Hair Removal",
         shortDescription:
@@ -96,7 +123,15 @@ export const useTreatmentsStore = defineStore("treatments", {
             description: "Treatment",
             targetAreas: ["face"],
             type: "session",
-            price: 1900,
+            price: 2200,
+            currency: "ZAR",
+          },
+          {
+            serviceId: "mermaid-facial",
+            description: "Mermaid Facial (Salmon Derived)",
+            targetAreas: ["face"],
+            type: "session",
+            price: 3500,
             currency: "ZAR",
           },
         ],
@@ -331,6 +366,22 @@ export const useTreatmentsStore = defineStore("treatments", {
         status: "active",
         services: [
           {
+            serviceId: "cosmo-peel",
+            description: "Cosmo Peel",
+            targetAreas: ["face"],
+            type: "session",
+            price: 2500,
+            currency: "ZAR",
+          },
+          {
+            serviceId: "glass-peel",
+            description: "Glass Peel",
+            targetAreas: ["face"],
+            type: "session",
+            price: 2500,
+            currency: "ZAR",
+          },
+          {
             serviceId: "retinol-peel",
             description: "Retinol Peel",
             targetAreas: ["face"],
@@ -339,19 +390,19 @@ export const useTreatmentsStore = defineStore("treatments", {
             currency: "ZAR",
           },
           {
+            serviceId: "gel-peel",
+            description: "Gel Peel",
+            targetAreas: ["face"],
+            type: "session",
+            price: 1200,
+            currency: "ZAR",
+          },
+          {
             serviceId: "glycolic-peel",
             description: "Glycolic Peel",
             targetAreas: ["face"],
             type: "session",
-            price: 1100,
-            currency: "ZAR",
-          },
-          {
-            serviceId: "cosmo-peel",
-            description: "Cosmo Peel",
-            targetAreas: ["face"],
-            type: "session",
-            price: 1800,
+            price: 1200,
             currency: "ZAR",
           },
           {
@@ -359,15 +410,7 @@ export const useTreatmentsStore = defineStore("treatments", {
             description: "Milk Peel",
             targetAreas: ["face"],
             type: "session",
-            price: 1100,
-            currency: "ZAR",
-          },
-          {
-            serviceId: "gel-peel",
-            description: "Gel Peel",
-            targetAreas: ["face"],
-            type: "session",
-            price: 1100,
+            price: 1200,
             currency: "ZAR",
           },
         ],

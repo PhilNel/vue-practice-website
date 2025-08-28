@@ -69,7 +69,7 @@ const categories = computed(() => {
         .map(category => ({
             name: category,
             displayName: categoryMap[category] || category,
-            treatments: grouped.get(category)!.sort((a, b) => a.name.localeCompare(b.name))
+            treatments: grouped.get(category)
         }))
 })
 
